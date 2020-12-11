@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainTitle">
+    <fragment
+        android:id="@+id/mainTitle"
+        android:name="com.example.myapplication.MainTitle"
+        android:label="fragment_main_title"
+        tools:layout="@layout/fragment_main_title" >
+        <action
+            android:id="@+id/action_mainTitle_to_secondPage"
+            app:destination="@id/secondPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondPage"
+        android:name="com.example.myapplication.SecondPage"
+        android:label="fragment_second_page"
+        tools:layout="@layout/fragment_second_page" />
+</navigation>
